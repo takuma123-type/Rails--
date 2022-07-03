@@ -1,0 +1,38 @@
+<%= stylesheet_link_tag "application", :media => "all" %>
+
+<header>
+    <h1><%= image_tag '5ch_logo.png', size: "120x70" %></h1>
+    <nav>
+        <ul>
+            <li><%= link_to '掲示板', '/' %></li>
+            <li><%= link_to '新規投稿', '/fivech/new' %></li>
+    </nav>
+</header>
+
+<h1>掲示板ページ</h1>
+
+<section class="wrapper">
+    <div class="container">
+        <div class="content">
+            <h2 class="heading">掲示板内容</h2>
+            <% @fivechs.each do | fivech | %>
+                <ul class="content-ul">
+                    <li class="content-li">
+                        <%= fivech.content %>
+                        <%= link_to "編集", edit_fivech_path(fivech) %>
+                        <%= button_to "削除", fivech_path(fivech.id), method: :delete %>
+                    </li>
+                </ul>
+                <% end %>
+         </div>
+    </div>
+</section>
+
+
+<footer>
+<p>© All rights reserved by Takuma.</p>
+</footer>
+
+
+
+

@@ -1,0 +1,5 @@
+<%= form_tag('/fivech', method: :post)do %>
+<%= label_tag :内容 %>
+  <%= text_area_tag :content %>
+  <%= submit_tag "追加" %>
+<% end %>

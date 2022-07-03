@@ -1,0 +1,112 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    background: #f6f5f4;
+  }
+  header {
+    width: 100%;
+    height: 100px;
+    background: #b3d874;
+    display: flex; /* flexboxを作る */
+    align-items: center; /* 上下中央に揃える */
+    justify-content: space-between; /* 両端に配置 */
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+  }
+  h1 a {
+    color: #1a1a1a;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+
+  }
+  ul li a {
+    padding: 1px 15px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* container */
+.wrapper{
+    width:100%;
+}
+.wrapper .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+}
+/* content */
+.wrapper .content {
+    padding:50px;
+    text-align:center;
+}
+
+ul.content-ul  {
+    text-align:center;
+
+}
+.wrapper .content .heading{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #cab64a;
+  }
+  .footer-text {
+    color: #fff;
+  }
+
+
+  .contact-item,
+.contact-body {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-item {
+    text-align: left;
+    width: 30%;
+    background-color: #eee;
+}
+
+.contact-body {
+    width: 70%;
+}
+
+li.content-li {
+  display: inline-flex;
+}
