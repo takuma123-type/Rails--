@@ -1,4 +1,4 @@
-# README
+# Rails掲示板　簡易アプリ
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
